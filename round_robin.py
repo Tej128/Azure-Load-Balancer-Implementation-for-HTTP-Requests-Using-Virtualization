@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 # List of servers to balance between
-servers = ['http://98.71.102.147:8080/', 'http://98.71.102.234:8080/']
+servers = ['http://<public ip>:8080/', 'http://<public ip>:8080/'] #insert the relevant public ip addresses respectively for server 1 and server 2
 current_server = 0  # Index to track the current server to use
 
 @app.route('/')
